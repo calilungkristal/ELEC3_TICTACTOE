@@ -190,4 +190,78 @@
         checkWinner()
         b.Enabled = False
     End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        btn1.Enabled = True
+        btn2.Enabled = True
+        btn3.Enabled = True
+        btn4.Enabled = True
+        btn5.Enabled = True
+        btn6.Enabled = True
+        btn7.Enabled = True
+        btn8.Enabled = True
+        btn9.Enabled = True
+
+        btn1.Text = ""
+        btn2.Text = ""
+        btn3.Text = ""
+        btn4.Text = ""
+        btn5.Text = ""
+        btn6.Text = ""
+        btn7.Text = ""
+        btn8.Text = ""
+        btn9.Text = ""
+
+        btn1.BackColor = Color.White
+        btn2.BackColor = Color.White
+        btn3.BackColor = Color.White
+        btn4.BackColor = Color.White
+        btn5.BackColor = Color.White
+        btn6.BackColor = Color.White
+        btn7.BackColor = Color.White
+        btn8.BackColor = Color.White
+        btn9.BackColor = Color.White
+    End Sub
+
+    Private Sub btnNewGame_Click(sender As Object, e As EventArgs) Handles btnNewGame.Click
+        btn1.Enabled = True
+        btn2.Enabled = True
+        btn3.Enabled = True
+        btn4.Enabled = True
+        btn5.Enabled = True
+        btn6.Enabled = True
+        btn7.Enabled = True
+        btn8.Enabled = True
+        btn9.Enabled = True
+
+        btn1.Text = ""
+        btn2.Text = ""
+        btn3.Text = ""
+        btn4.Text = ""
+        btn5.Text = ""
+        btn6.Text = ""
+        btn7.Text = ""
+        btn8.Text = ""
+        btn9.Text = ""
+
+        btn1.BackColor = Color.White
+        btn2.BackColor = Color.White
+        btn3.BackColor = Color.White
+        btn4.BackColor = Color.White
+        btn5.BackColor = Color.White
+        btn6.BackColor = Color.White
+        btn7.BackColor = Color.White
+        btn8.BackColor = Color.White
+        btn9.BackColor = Color.White
+
+        lblScorePlayerX.Text = "0"
+        lblScorePlayer0.Text = "0"
+    End Sub
+
+    Private Sub btnExitGame_Click(sender As Object, e As EventArgs) Handles btnExitGame.Click
+        Dim checkExit As DialogResult = MessageBox.Show("Confirm if you want to exit", "TIC TAC TOE", MessageBoxButtons.OKCancel, MessageBoxIcon.Information)
+        If checkExit = DialogResult.OK Then
+            Application.Exit()
+        End If
+    End Sub
 End Class
