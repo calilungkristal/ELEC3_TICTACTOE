@@ -35,10 +35,10 @@ Partial Class Form1
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnNewGame = New System.Windows.Forms.Button()
         Me.btnExitGame = New System.Windows.Forms.Button()
-        Me.lblPlayer0 = New System.Windows.Forms.Label()
-        Me.lblScorePlayer0 = New System.Windows.Forms.Label()
         Me.lblPlayerX = New System.Windows.Forms.Label()
         Me.lblScorePlayerX = New System.Windows.Forms.Label()
+        Me.lblPlayer0 = New System.Windows.Forms.Label()
+        Me.lblScorePlayer0 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn1
@@ -196,40 +196,15 @@ Partial Class Form1
         Me.btnExitGame.Text = "EXIT GAME"
         Me.btnExitGame.UseVisualStyleBackColor = False
         '
-        'lblPlayer0
-        '
-        Me.lblPlayer0.BackColor = System.Drawing.Color.Orange
-        Me.lblPlayer0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblPlayer0.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPlayer0.Location = New System.Drawing.Point(330, 94)
-        Me.lblPlayer0.Name = "lblPlayer0"
-        Me.lblPlayer0.Size = New System.Drawing.Size(150, 100)
-        Me.lblPlayer0.TabIndex = 13
-        Me.lblPlayer0.Text = "PLAYER 0:"
-        Me.lblPlayer0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblScorePlayer0
-        '
-        Me.lblScorePlayer0.BackColor = System.Drawing.Color.Brown
-        Me.lblScorePlayer0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblScorePlayer0.Font = New System.Drawing.Font("Arial Rounded MT Bold", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblScorePlayer0.ForeColor = System.Drawing.Color.White
-        Me.lblScorePlayer0.Location = New System.Drawing.Point(330, 200)
-        Me.lblScorePlayer0.Name = "lblScorePlayer0"
-        Me.lblScorePlayer0.Size = New System.Drawing.Size(150, 100)
-        Me.lblScorePlayer0.TabIndex = 14
-        Me.lblScorePlayer0.Text = "0"
-        Me.lblScorePlayer0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'lblPlayerX
         '
         Me.lblPlayerX.BackColor = System.Drawing.Color.Orange
         Me.lblPlayerX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblPlayerX.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblPlayerX.Location = New System.Drawing.Point(486, 94)
+        Me.lblPlayerX.Location = New System.Drawing.Point(330, 94)
         Me.lblPlayerX.Name = "lblPlayerX"
         Me.lblPlayerX.Size = New System.Drawing.Size(150, 100)
-        Me.lblPlayerX.TabIndex = 15
+        Me.lblPlayerX.TabIndex = 13
         Me.lblPlayerX.Text = "PLAYER X:"
         Me.lblPlayerX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -239,12 +214,37 @@ Partial Class Form1
         Me.lblScorePlayerX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lblScorePlayerX.Font = New System.Drawing.Font("Arial Rounded MT Bold", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblScorePlayerX.ForeColor = System.Drawing.Color.White
-        Me.lblScorePlayerX.Location = New System.Drawing.Point(486, 200)
+        Me.lblScorePlayerX.Location = New System.Drawing.Point(330, 200)
         Me.lblScorePlayerX.Name = "lblScorePlayerX"
         Me.lblScorePlayerX.Size = New System.Drawing.Size(150, 100)
-        Me.lblScorePlayerX.TabIndex = 16
+        Me.lblScorePlayerX.TabIndex = 14
         Me.lblScorePlayerX.Text = "0"
         Me.lblScorePlayerX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPlayer0
+        '
+        Me.lblPlayer0.BackColor = System.Drawing.Color.Orange
+        Me.lblPlayer0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPlayer0.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblPlayer0.Location = New System.Drawing.Point(486, 94)
+        Me.lblPlayer0.Name = "lblPlayer0"
+        Me.lblPlayer0.Size = New System.Drawing.Size(150, 100)
+        Me.lblPlayer0.TabIndex = 15
+        Me.lblPlayer0.Text = "PLAYER 0:"
+        Me.lblPlayer0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblScorePlayer0
+        '
+        Me.lblScorePlayer0.BackColor = System.Drawing.Color.Brown
+        Me.lblScorePlayer0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblScorePlayer0.Font = New System.Drawing.Font("Arial Rounded MT Bold", 35.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblScorePlayer0.ForeColor = System.Drawing.Color.White
+        Me.lblScorePlayer0.Location = New System.Drawing.Point(486, 200)
+        Me.lblScorePlayer0.Name = "lblScorePlayer0"
+        Me.lblScorePlayer0.Size = New System.Drawing.Size(150, 100)
+        Me.lblScorePlayer0.TabIndex = 16
+        Me.lblScorePlayer0.Text = "0"
+        Me.lblScorePlayer0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -253,10 +253,10 @@ Partial Class Form1
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(649, 419)
-        Me.Controls.Add(Me.lblScorePlayerX)
-        Me.Controls.Add(Me.lblPlayerX)
         Me.Controls.Add(Me.lblScorePlayer0)
         Me.Controls.Add(Me.lblPlayer0)
+        Me.Controls.Add(Me.lblScorePlayerX)
+        Me.Controls.Add(Me.lblPlayerX)
         Me.Controls.Add(Me.btnExitGame)
         Me.Controls.Add(Me.btnNewGame)
         Me.Controls.Add(Me.btnReset)
@@ -293,8 +293,8 @@ Partial Class Form1
     Friend WithEvents btnReset As Button
     Friend WithEvents btnNewGame As Button
     Friend WithEvents btnExitGame As Button
-    Friend WithEvents lblPlayer0 As Label
-    Friend WithEvents lblScorePlayer0 As Label
     Friend WithEvents lblPlayerX As Label
     Friend WithEvents lblScorePlayerX As Label
+    Friend WithEvents lblPlayer0 As Label
+    Friend WithEvents lblScorePlayer0 As Label
 End Class
